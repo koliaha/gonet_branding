@@ -1,0 +1,20 @@
+@use './abstracts/' as *;
+
+// Animaions
+@import './animations.scss';
+
+// Fonts
+@import './fonts.scss';
+
+// Typography
+@import './typography';
+
+// header
+
+@import './header.scss';
+@import './nav.scss';
+@import './brand.scss';
+@import './footer.scss';
+@import './content.scss';
+@import './design.scss';
+@import './pattern.scss';
