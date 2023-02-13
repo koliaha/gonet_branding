@@ -35,10 +35,10 @@ svg {
   font-family: "Robtronika";
 }
 
-ul {
-  padding-left: 30px;
-  max-width: 818px;
-}
+// ul {
+//   padding-left: 30px;
+//   max-width: 818px;
+// }
 
 a {
   text-decoration: none;
@@ -73,14 +73,14 @@ section {
 
 .text-title {
   font-weight: 600;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 45px;
+  line-height: 54px;
 }
 
 .text-prime {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .text-second {
@@ -96,7 +96,7 @@ section {
 .title__text {
   margin-top: 28px;
 }
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
 .mt-40 {
@@ -110,7 +110,9 @@ section {
 .mt-120 {
   margin-top: 120px;
 }
-
+.mt-60 {
+  margin-top: 60px;
+}
 .mx-30 {
   margin: 0 30px;
 }
@@ -128,31 +130,31 @@ section {
     background: colors.$white;
   }
 }
-.blue-color{
-  color:colors.$main-blue !important
+.blue-color {
+  color: colors.$main-blue !important;
 }
-.white-color{
-  color:colors.$white !important
+.white-color {
+  color: colors.$white !important;
 }
 .btn {
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 24px;
   display: block;
-  background: linear-gradient(270deg, #ff7323 -88.02%, #000000 48.08%);
+  background: linear-gradient(270deg, #FC2E71 -88.02%, #000000 76.49%);
   border: 1px solid colors.$black;
   font-weight: 600;
   color: colors.$white;
-  max-width: 355px;
+  max-width: 255px;
   width: 100%;
-  padding: 32px;
+  padding: 20px 40px;
   text-align: center;
-
+  cursor: pointer;
   &-wide {
     max-width: 436px;
   }
 
   &-light {
-    background: linear-gradient(270deg, #ff7323 -122.45%, #ffffff 50.1%);
+    background: linear-gradient(270deg, #FC2E71 -122.45%, #FFFFFF 68.55%);
     color: colors.$black;
   }
 }
@@ -181,12 +183,16 @@ section {
   position: absolute;
   z-index: 0;
 
-  &-first, &-third, &-eighth {
+  &-first,
+  &-third,
+  &-eighth {
     right: 0;
     top: 0;
   }
 
-  &-second, &-seventh, &-tenth {
+  &-second,
+  &-seventh,
+  &-tenth {
     left: 0;
     bottom: 0;
   }
@@ -218,4 +224,8 @@ section {
     left: 10%;
     top: 30%;
   }
+}
+.bg-border {
+  background: colors.$white;
+  border: 1px solid colors.$black;
 }

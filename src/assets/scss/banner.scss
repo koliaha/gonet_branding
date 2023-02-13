@@ -1,0 +1,25 @@
+.banner {
+  &-wrapper {
+    background: $bg-gray;
+    padding: 80px 0;
+    color:$white
+  }
+  &-content {
+    padding: 46px 78px;
+    @include flex(row, space-between,center);
+    background: $light-black;
+  }
+  &-item{
+    max-width: 50%;
+    width: 100%;
+  }
+  &-right{
+    @include flex(row, center,center);
+  }
+  &-text{
+    margin-top: 20px;
+  }
+  &-btn{
+    max-width: 203px;
+  }
+}

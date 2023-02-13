@@ -1,0 +1,26 @@
+.form {
+  &-wrapper {
+    background: $bg-gray;
+    padding: 100px 0;
+  }
+  &-content {
+    padding: 70px;
+    @include flex(column, center,center);
+  }
+  &__input-list {
+    @include flex(row, start);
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    .input-form {
+      max-width: 323px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $light-black;
+      outline: none;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 8px;
+    }
+  }
+}

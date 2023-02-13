@@ -1,13 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import BrandView from '../views/BrandView.vue'
+import GonetView from '../views/GonetView.vue'
 import ContentView from '../views/ContentView.vue'
 import DesignView from '../views/DesignView.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'BrandView',
-    component: BrandView
+    name: 'GonetView',
+    component: GonetView
   },
   {
     path: '/content',

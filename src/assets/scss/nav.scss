@@ -4,17 +4,34 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  height: 80px;
-  @include flex(row, start, center);
+  padding: 18px 0;
+  &-content {
+    @include flex(row, space-between, center);
+  }
   &-list {
     @include flex(row, start, center);
-    gap: 60px;
+    gap: 50px;
   }
-  &-item{
-    font-size: 1rem;
-    color:$white;
-    &.active{
-      color:$orange;
+  &-item {
+    @include flex(row, center, center);
+    color: $white;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border: solid $white;
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      padding: 4px;
+      transform: rotate(45deg);
+      right: -5px;
+      top: 2px;
+    }
+    &.active {
+      color: $orange;
+    }
+    &_link {
+      margin-right: 10px;
     }
   }
 }
