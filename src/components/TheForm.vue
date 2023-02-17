@@ -4,7 +4,7 @@
             <h1 class="form-title text-title text-center">
                 <slot />
             </h1>
-            <form class="form-content bg-border mt-60">
+            <form class="form-content bg-border mt-60" id="form">
                 <div class="form__input-list">
                     <input type="text" name="name" class="input-form" placeholder="Имя *" required>
                     <input type="text" name="name" class="input-form" placeholder="Имя *" required>

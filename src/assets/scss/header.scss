@@ -12,10 +12,17 @@
   @include flex(column, center, center);
   padding: 200px 0 212px;
   position: relative;
+  &-cube{
+    position: absolute;
+    max-width: 346px;
+    left: -110%;
+    bottom: -50%;
+  }
 }
 
 .header-content {
   @include flex(column, center, center);
+  position: relative;
   &__main-title {
     font-weight: 600;
     font-size: 100px;

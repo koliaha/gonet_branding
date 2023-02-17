@@ -170,60 +170,30 @@ section {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff7323;
+  background: colors.$pink;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff863f;
+  background: #bb0083;
 }
 
 .brand-circle {
   position: absolute;
   z-index: 0;
-
-  &-first,
-  &-third,
-  &-eighth {
+  &-first {
     right: 0;
-    top: 0;
-  }
-
-  &-second,
-  &-seventh,
-  &-tenth {
-    left: 0;
-    bottom: 0;
-  }
-
-  &-forth {
-    left: 27%;
     top: 50%;
+    transform: translateY(-50%);
   }
-
-  &-fifth {
-    right: 245px;
-    bottom: 0;
-  }
-
-  &-sixth {
-    right: 0;
-    top: 30%;
-  }
-
-  &-tringle {
+  &-second {
     left: 0;
+    top: 40%;
+    transform: translateY(-50%);
   }
 
-  &-tringle2 {
-    right: 0;
-  }
 
-  &-ninth {
-    left: 10%;
-    top: 30%;
-  }
 }
 .bg-border {
   background: colors.$white;

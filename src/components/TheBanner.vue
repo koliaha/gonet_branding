@@ -3,8 +3,8 @@
         <div class="container">
             <div class="banner-content">
                 <div class="banner-item banner-left">
-                    <div class="banner-title text-title">SSP</div>
-                    <div class="banner-text text-prime">С Go NET SSP можно подключать рекламные источники и эффективно монетизировать рекламный инвентарь по России и всему миру</div>
+                    <div class="banner-title text-title"><slot name="header"></slot></div>
+                    <div class="banner-text text-prime"><slot name="content"></slot></div>
                 </div>
                 <div class="banner-item banner-right">
                     <button class="btn btn-light banner-btn">Подробнее</button>
